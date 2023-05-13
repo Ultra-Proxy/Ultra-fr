@@ -51,6 +51,9 @@
     },
     {
         "title": "TikTok",
+        "img": "./img/apps/tiktok.png",
+        "location": "https://www.tiktok.com"
+    }
+    
         
-        "location": "https://www.tiktok.com/"
 ]
