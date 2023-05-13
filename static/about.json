@@ -1,9 +1,9 @@
 {
     "main": {
-        "title": "About Incognito",
-        "data": "Access the world wide web, Incognito is an anti-censorship web service."
+        "title": "About Ultra Proxy",
+        "data": "Access the internet without restrictions, Ultra Proxy is based off Incognito. We are an anti-censorship web service."
     },
-    "authors": [
+    "The OG creators who help created Incognito (Shout out to them!)": [
         {
             "name": "<a href=\"https://github.com/caracal-js\">Caracal.js</a>",
             "data": "Creator of <a href=\"https://github.com/titaniumnetwork-dev/Ultraviolet\">Ultr&#173;avi&#173;olet</a> & Incognito</p>"
@@ -26,6 +26,7 @@
     "contact": [
         {
             "name": "<a href=\"mailto:example@example.com\">No email provided</a>"
+            "data": "we will provide a contact list here in a bit!"
         }
     ]
 }
