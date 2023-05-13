@@ -18,4 +18,6 @@
     {
         "question": "Why is my gmail authentication not working on some sites",
         "answer": "Due to some configurations in some sites, like spotify may not work. But it is tested to work on discord!"
+    }
+
 ]
