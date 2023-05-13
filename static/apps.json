@@ -48,5 +48,9 @@
         "title": "Y8",
         "img": "./img/apps/y8.png",
         "location": "https://www.y8.com"
-    }
+    },
+    {
+        "title": "TikTok",
+        
+        "location": "https://www.tiktok.com/"
 ]
