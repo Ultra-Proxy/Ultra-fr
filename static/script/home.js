@@ -17,7 +17,7 @@
                                               |___/                                                                     
 */
 const tips = [
-    'Modify Inc&#173;ogni&#173;tos appearance & browser tab in <a href="#settings">settings.</a>',
+    'Modify Ul&#173;tr&#173;as appearance & browser tab in <a href="#settings">settings.</a>',
     'You can enable about:blank tab cloaking in <a href="#settings">settings.</a>',
     'Access popular media & sites easily in <a href="#apps">apps.</a>',
     'Get answers to questions in <a href="#support">support</a>',
