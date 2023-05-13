@@ -14,5 +14,8 @@
     {
         "question": "Why is GeForce Now is responding with \"403 Access Denied\"",
         "answer": "At the moment, too many people are using GeForce Now on our servers. Try again later."
-    }
+    },
+    {
+        "question": "Why is my gmail authentication not working on some sites",
+        "answer": "Due to some configurations in some sites, like spotify may not work. But it is tested to work on discord!"
 ]
