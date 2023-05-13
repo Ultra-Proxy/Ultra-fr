@@ -24,12 +24,12 @@ function community(app) {
         'div', 
         [
             app.createElement('section', [
-                app.createElement('p', 'You are being taken to the Amethyst Network server (discord.gg/fzrmxgu2NR).', {
+                app.createElement('p', 'Would you like to go to Ultras discord server? (https://discord.gg/xsjKaDcpDJ).', {
                         style: {
                             'margin-bottom': '0'
                         }
                     }),
-                    app.createElement('p', 'Are you sure you want to <a href="https://discord.gg/fzrmxgu2NR">proceed</a>?', {
+                    app.createElement('p', 'Are you sure you want to <a href="https://discord.gg/xsjKaDcpDJ">proceed</a>?', {
                         style: {
                             'margin-bottom': '0'
                         }
