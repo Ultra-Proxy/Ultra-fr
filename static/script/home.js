@@ -17,24 +17,15 @@
                                               |___/                                                                     
 */
 const tips = [
-    'Modify Ul&#173;tr&#173;as appearance & browser tab in <a href="#settings">settings.</a>',
+    'Modify Inc&#173;ogni&#173;tos appearance & browser tab in <a href="#settings">settings.</a>',
     'You can enable about:blank tab cloaking in <a href="#settings">settings.</a>',
     'Access popular media & sites easily in <a href="#apps">apps.</a>',
-    'Get answers to questions in <a href="#support">support</a>',
-    'Ultra was made by jamal jackson and Eld',
-    `Check out <a onclick="(${ah.toString()})()">Ali&#173;enHu&#173;b</a>`
+    'This <a href="https://github.com/amethystnetwork-dev/Incognito">unofficial In&#173;cog&#173;nito version</a> is made by Am&#173;et&#173;hy&#173;st Net&#173;wo&#173;rk.',
+    'Join the <a href="#community">Am&#173;et&#173;hyst Ne&#173;tw&#173;ork d&#173;i&#173;sco&#173;rd</a>',
+    'Get answers to questions in <a href="#support">support</a>'
 ];
 
-function ah() {
-    app.main.target.style.display = 'none';
-    app.header.target.style.display = 'none';
 
-    const frame = document.querySelector('.access-frame');
-    frame.src = './load.html#aHR0cHM6Ly9hbGllbmh1Yi54eXovP3V0bV9zb3VyY2U9aW5jb2dfZGVwbG95JnV0bV9tZWRpdW09YW1ldGh5c3RuZXR3b3Jr';
-
-    frame.style.display = 'block';
-    document.querySelector('.access-panel').style.removeProperty('display');
-}
 
 function access(app) {
     if (document.querySelector('header').hasAttribute('data-init')) {
@@ -46,7 +37,7 @@ function access(app) {
     app.search.logo.style.marginLeft = '0';
     app.search.submit.style.display = 'inline';
     app.search.input.style.removeProperty('display');
-    app.search.input.placeholder = 'Surf the unblocked web';
+    app.search.input.placeholder = 'Search the web';
     app.header.target.setAttribute('data-page', '');
     app.nav.target.style.removeProperty('display');
     document.querySelector('#open-nav').setAttribute('data-open', '');
@@ -89,28 +80,58 @@ function access(app) {
             clearTimeout(app.timeout);
             app.timeout = setTimeout(async () => {
                 var mode = localStorage.getItem('incog||suggestions') || 'ddg';
-                if(mode == 'none') return;
-                const provider = app.searchProviders[mode];
-                const res = await app.bare.fetch(provider.mapQuery(event.target.value));
-                const text = await res.text();
-                const suggestions = provider.parseResponse(text);
+                var path;
+                var host;
+                var prefix;
+                var array;
+                if(mode == 'none') {} else {
+                    switch(mode) {
+                        case 'ddg':
+                            host = 'duckduckgo.com'
+                            path = '/ac/?q='
+                            prefix = 'phrase'
+                            array = false
+                            break;
+                        case 'brave':
+                            host = 'search.brave.com'
+                            path = '/api/suggest?q='
+                            array = true
+                            break;
+                    }
+                    const res = await fetch(__uv$config.bare + 'v1/', {
+                        headers: {
+                            'x-bare-host': host,
+                            'x-bare-protocol': 'https:',
+                            'x-bare-path': path + encodeURIComponent(event.target.value),
+                            'x-bare-port': '443',
+                            'x-bare-headers': JSON.stringify({ Host: host }),
+                            'x-bare-forward-headers': '[]'
+                        }
+                    })
+                    const json = await res.json();
+                    var suggestions = [];
 
-                suggestions.forEach(element => {
-                    app.main.suggestions.append(app.createElement('div', element, { class: 'suggestion',
-                            events: {
-                                click() {
-                                    app.search.input.value = element;
-                                    const frame = document.querySelector('iframe');
-                                    document.querySelector('main').style.display = 'none';
-                                    document.querySelector('header').style.display = 'none';
-                                    frame.style.display = 'block';
-                                    frame.src = './load.html#' + encodeURIComponent(btoa(element));
-                                    document.querySelector('.access-panel').style.removeProperty('display');
+                    if(array) { suggestions = json[1] } else {
+                        json.forEach(element => suggestions.push(element[prefix]));
+                    }
+
+                    suggestions.forEach(element => {
+                        app.main.suggestions.append(app.createElement('div', element, { class: 'suggestion',
+                                events: {
+                                    click() {
+                                        app.search.input.value = element;
+                                        const frame = document.querySelector('iframe');
+                                        document.querySelector('main').style.display = 'none';
+                                        document.querySelector('header').style.display = 'none';
+                                        frame.style.display = 'block';
+                                        frame.src = './load.html#' + encodeURIComponent(btoa(element));
+                                        document.querySelector('.access-panel').style.removeProperty('display');
+                                    }
                                 }
-                            }
-                        }))
+                            }))
 
                     });
+            }
             }, 400);
 
         }).toString() + ')()'
