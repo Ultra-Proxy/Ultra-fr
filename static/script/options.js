@@ -35,8 +35,7 @@ async function options(app) {
         { id: 'morning', content: 'Morning' },
         { id: 'terminal', content: 'Terminal' },
         { id: 'resilent', content: 'Resilient' },
-        { id: 'fancy', content: 'Fancy' },
-        { id: 'cevms', content: 'Terminal' }
+        { id: 'fancy', content: 'Fancy' }
     ]
 
     const backgroundThemes = [
@@ -49,8 +48,7 @@ async function options(app) {
         { id: 'google', content: 'Google' },
         { id: 'ddg', content: 'DuckDuckGo' },
         { id: 'bing', content: 'Bing' },
-        { id: 'brave', content: 'Brave' },
-        { id: 'startpage', content: 'Startpage' }
+        { id: 'brave', content: 'Brave' }
     ]
 
     const searchEngineSuggestions = [
