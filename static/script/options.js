@@ -197,7 +197,7 @@ async function options(app) {
                 app.createElement('button', 'Reset Appearance', {
                     style: {
                         'width': '300px',
-                        display: 'inline-block',
+                        'display': 'inline-block',
                         'padding': '14px 18px',
                         'margin': '5px 0',
                         'color': 'var(--text-color)',
