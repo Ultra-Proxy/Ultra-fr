@@ -35,7 +35,8 @@ async function options(app) {
         { id: 'morning', content: 'Morning' },
         { id: 'terminal', content: 'Terminal' },
         { id: 'resilent', content: 'Resilient' },
-        { id: 'fancy', content: 'Fancy' }
+        { id: 'fancy', content: 'Fancy' },
+        { id: 'cevms', content: 'Terminal' }
     ]
 
     const backgroundThemes = [
