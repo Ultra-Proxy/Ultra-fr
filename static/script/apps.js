@@ -65,7 +65,6 @@ async function compileGs(app) {
     const json = await res.json();
     const arr = [];
 
-    app.search.input.placeholder = `Search apps (${json.length})`
     for (const entry of json) {
         arr.push(
             app.createElement('div', [], {
