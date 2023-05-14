@@ -328,7 +328,7 @@ async function options(app) {
                 app.createElement('button', 'Go about:blank', {
                     style: {
                         'width': '300px',
-                        display: 'inline-block',
+                        'display': 'inline-block',
                         'padding': '14px 18px',
                         'margin': '5px 0',
                         'color': 'var(--text-color)',
@@ -400,7 +400,7 @@ The about:blank script is based off of ABC by
                 app.createElement('button', 'Reset Tab', {
                     style: {
                         'width': '300px',
-                        display: 'inline-block',
+                        'display': 'inline-block',
                         'padding': '14px 18px',
                         'margin': '5px 0',
                         'color': 'var(--text-color)',
@@ -462,7 +462,7 @@ The about:blank script is based off of ABC by
                 app.createElement('button', 'Reset Search Engine', {
                     style: {
                         'width': '300px',
-                        display: 'inline-block',
+                        'display': 'inline-block',
                         'padding': '14px 18px',
                         'margin': '5px 0',
                         'color': 'var(--text-color)',
@@ -576,7 +576,7 @@ async function createAbout(app) {
         app.createElement('section', [
             app.createElement('span', json.main.title, {
                 style: {
-                    display: 'block',
+                    'display': 'block',
                     'margin-bottom': '6px',
                     'font-size': '18px',
                     'font-weight': '500'
@@ -589,7 +589,7 @@ async function createAbout(app) {
         app.createElement('section', [
             app.createElement('span', 'Authors', {
                 style: {
-                    display: 'block',
+                    'display': 'block',
                     'margin-bottom': '6px',
                     'font-size': '18px',
                     'font-weight': '500'
@@ -600,7 +600,7 @@ async function createAbout(app) {
         app.createElement('section', [
             app.createElement('span', 'Socials', {
                 style: {
-                    display: 'block',
+                    'display': 'block',
                     'margin-bottom': '6px',
                     'font-size': '18px',
                     'font-weight': '500'
@@ -611,7 +611,7 @@ async function createAbout(app) {
         contacts.length ? app.createElement('section', [
             app.createElement('span', 'Contact', {
                 style: {
-                    display: 'block',
+                    'display': 'block',
                     'margin-bottom': '6px',
                     'font-size': '18px',
                     'font-weight': '500'
