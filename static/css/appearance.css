@@ -6,7 +6,7 @@ body {
     --scrollbar-thumb-color: rgb(52, 184, 116, 0.3);
     --scrollbar-track-color: rgb(52, 184, 116, 0.1);
     --font-family: Roboto;
-    --background: #ADD8E6;
+    --background: #1c5b87;
     background: var(--background);
 }
 body[data-appearance="simple"] {
