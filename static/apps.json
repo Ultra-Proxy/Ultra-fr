@@ -63,7 +63,11 @@
         "title": "Chat GPT",
         "img": "./img/apps/Unknown.png",
         "location": "https://chatgptproxy.me/#/"
-    }
+    },
+    {
+        "title": "Games 1"
+        "img": "./img/apps/",
+        "location": "https://gray-sand-0ae3d2d10.2.azurestaticapps.net/projects"
     
         
 ]
