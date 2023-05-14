@@ -23,6 +23,7 @@ const tips = [
     'I hate beavers', 
     'Get answers to questions in <a href="#support">support</a>',
     'Ultra was made by Eld and Jamal Jackson',
+    'Suggest suggestions to Eld or Jamal Jackson'
 ];
 
 
