@@ -85,6 +85,16 @@ body[data-appearance="midnight"] {
     --scrollbar-track-color: rgb(32, 148, 252, 0.1);
 }
 
+body[data-appearance="cevms"] {
+    --border-color:rgb(48, 25, 52);
+    --header-background: #181818;
+    --text-color: #FFF;
+    --accent: purple;
+    --background: #121212;
+    --scrollbar-thumb-color: rgb(32, 148, 252, 0.3);
+    --scrollbar-track-color: rgb(32, 148, 252, 0.1);
+}
+
 body[data-appearance=space] {
     --border-color:rgb(255, 255, 255, .2);
     --header-background: #181818;
