@@ -49,7 +49,8 @@ async function options(app) {
         { id: 'google', content: 'Google' },
         { id: 'ddg', content: 'DuckDuckGo' },
         { id: 'bing', content: 'Bing' },
-        { id: 'brave', content: 'Brave' }
+        { id: 'brave', content: 'Brave' },
+        { id: 'startpage', content: 'Startpage' }
     ]
 
     const searchEngineSuggestions = [
