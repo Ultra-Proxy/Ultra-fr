@@ -25,8 +25,8 @@
     ],
     "contact": [
         {
-            "name": "<a href=\"mailto:example@example.com\">No email provided</a>"
-            "data": "we will provide a contact list here in a bit!"
+           "name": "<a href=\"mailto:example@example.com\">No email provided</a>" 
+          
         }
     ]
 }
